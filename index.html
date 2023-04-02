@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stith Mod 3 : Lab 1</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<header>
+    <h1>Testing Conditions</h1>
+</header>
+<nav>
+
+</nav>
+<body>
+    <div class="container">
+        
+        <div class="content">
+            <h2>Odd/Even</h2>
+            <p >Check if odd or even</p>
+            <label for="oddOrEvenInput">Number</label>
+            <input id="oddOrEvenInput" type="number" onchange="oddOrEven()">
+        </div>
+
+        <div class="content">
+            <h2>Confirm</h2>
+            <p id="confirmOutput">Click to confirm</p>
+            <input id="confirmInput" type="button" value="click me">
+
+        </div>
+
+        <div class="content">
+            <h2>Text Truthy/Falsy</h2>
+            <p id="textTFOutput"> Enter a value</p>
+            
+            <label for="textTFInput">enter a value:</label>
+            <input type="text" id="textTFInput">
+        </div>
+
+        <div class="content">
+            <h2>Numeric Truthy/Falsy</h2>
+            <p id="numTFOutput"> Enter a value</p>
+            
+            <label for="numTFInput">enter a value:</label>
+            <input type="number" id="numTFInput">
+        </div>
+
+        <div class="content">
+            <h2>AM or PM</h2>
+            <p id="dayOrNightOutput">Test if it is day or night</p>
+            <input id="dayOrNightInput" type="button" value="Check if it is AM or PM">
+
+        </div>
+
+        <div class="content">
+            <h2>Logical And</h2>
+            <h2>Value 1</h2>
+           
+           
+            <input type="radio" id="andCondition1" name="logicalAnd" onchange="logicalAndCheck()">
+            <label for="andCondition1">true </label>
+              
+            <input type="radio" id="andCondition2" name="logicalAnd" checked="checked"onchange="logicalAndCheck()">
+            <label for="andCondition2">false </label>
+              
+              
+            
+            <h2>Value 2</h2>
+
+              <input type="radio" id="andCondition3" name="logicalAnd2"onchange="logicalAndCheck()">
+            <label for="andCondition3">true </label>
+    
+             <input type="radio" id="andCondition4" name="logicalAnd2" checked="checked"onchange="logicalAndCheck()">
+            <label for="andCondition4">false </label>
+           
+
+            <p id="logicalAndOutput">check the boxes to see the output</p>
+        
+        </div>
+
+        <div class="content">
+            <h2>Logical Or</h2>
+            <h2>Value 1</h2>
+          
+             <input type="radio" id="orCondition1" name="logicalOr1" onchange="logicalOrCheck()">
+            <label for="orCondition1">true </label>
+            
+            <input type="radio" id="orCondition2" name="logicalOr1" checked="checked" onchange="logicalOrCheck()">
+            <label for="orCondition2">false </label>
+             
+              
+            
+            <h2>Value 2</h2>
+
+            <input type="radio" id="orCondition3" name="logicalOr2" onchange="logicalOrCheck()">
+            <label for="orCondition3">true </label>
+              
+               <input type="radio" id="orCondition4" name="logicalOr2" checked="checked" onchange="logicalOrCheck()">
+            <label for="orCondition4">false </label>
+             
+
+            <p id="logicalOrOutput">check the boxes to see the output</p>
+        
+        </div>
+
+        <div class="content">
+            <h2>Switch Statement</h2>
+       <label for="switchInput">Text To Output </label>
+            <input type="text" id="switchInput">
+
+            <label for="switchDropDown" >Output option</label>
+            <select id="switchDropDown">
+                <option value="consoleLog"> ConsoleLog</option>
+                <option value="alert"> alert</option>
+            </select>
+        </div>
+
+    </div>
+<script src="/js/main.js" ></script> 
+</body>
+
+</html>

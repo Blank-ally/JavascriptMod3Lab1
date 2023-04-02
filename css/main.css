@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    background-color:rgba(255,255,255,.5) ;
+    background-image: url(/css/images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    min-height: 100%;
+}
+
+
+header {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid black;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.container .content
+{
+    outline: 1px solid rgb(217, 217, 217);
+    padding: 30px;
+}
+
+.container .content label
+{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.container .content input, .container .content select
+{
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container .content input[type="radio"]{
+    display: inline;
+}
+
+.container .content input[type="radio"]+label {
+    display: inline;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+.on{
+background-color: green;
+}
+.off{
+background-color: red;
+}
